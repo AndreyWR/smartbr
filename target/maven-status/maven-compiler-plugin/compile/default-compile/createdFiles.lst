@@ -1,0 +1,4 @@
+controller\Controller.class
+model\Contato.class
+model\ConnectionFactory.class
+model\DAO.class

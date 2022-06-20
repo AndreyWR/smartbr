@@ -1,0 +1,255 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 18/06/2022, 22:11:16
+    Author     : andrey
+*/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    /*background-color: rgb(255, 255, 255);*/
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #3DEBB0 1%, #8956F3 99%);
+}
+
+.Conteudo{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    /*border: 2px solid #000;*/
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    background-color: #00ffff; /*#87CEFA;*/
+    color: #000;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barra{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s;
+}
+
+.barra:hover {
+    background-color: #fff;
+}
+
+.inp {
+    display: none;
+}
+
+.Slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide text{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.Botao1 {
+    text-decoration: none;
+    background-color: #0095f6;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.Botao2 {
+    text-decoration: none;
+    background-color: #d51213;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.Botao3 {
+    text-decoration: none;
+    background-color: #32CD32;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.Center {
+    text-align: center;
+}
+
+.divcont {
+    text-align: left;
+    color: white;
+}
+
+.Caixa1 {
+    width: 320px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #66bbff;
+    border-radius: 5px;
+}
+
+.Caixa2 {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #66bbff;
+    border-radius: 5px;
+}
+
+#caixa3{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ff0000;
+}
+
+.Caixa4 {
+    width: 320px;
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #66bbff;
+    border-radius: 5px;
+}
+
+#tabela {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+#tabela th{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color: #66bbff;
+    color: #fff;
+}
+
+#tabela td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 15px;
+}
+
+#casa{
+    background-image: url("imagens/favcasa.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+    padding-left: 70px;
+}
+
+#fone{
+    background-image: url("imagens/favfone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+    padding-left: 70px;
+}
+
+#mail{
+    background-image: url("imagens/favmail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+    padding-left: 70px;
+}
+
+#facebook{
+    background-image: url("imagens/favfacebook.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+    padding-left: 70px;
+}
+
+#linkedin{
+    background-image: url("imagens/favlinkedin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 1px;
+    padding-left: 70px;
+}
